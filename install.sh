@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Set current Time
 sudo date -s "$(curl -s --head http://google.com.au | grep ^Date: | sed 's/Date: //g')"
 
